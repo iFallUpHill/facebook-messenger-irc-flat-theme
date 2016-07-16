@@ -1,0 +1,28 @@
+.toggleButton {
+    display: table;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    z-index: 9999;
+    left: 50px;
+    top: 14px;
+    color: rgb(49, 49, 49);
+    border: 1px solid rgb(49, 49, 49);
+    font-size: 8px;
+    font-weight: 900;
+    text-align: center;
+
+    .toggleText {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.flatUI .toggleButton {
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+}
