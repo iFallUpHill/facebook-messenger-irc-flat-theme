@@ -1,8 +1,8 @@
 # Facebook Messenger IRC Inspired Flat Theme
 
-**A Chrome Extention that injects IRC inspired CSS into the Facebook Messenger web app (messenger.com)**
+**A Chrome Extention that adds IRC inspired CSS into the Facebook Messenger web app (messenger.com)**
 
-Download it here: 
+Download it here: Coming Soon!
 
 ## License
 
