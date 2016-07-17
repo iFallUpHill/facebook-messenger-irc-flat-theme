@@ -18,11 +18,13 @@ function updateUIPref(UIPref) {
 }
 
 function toggleUI() {
-    if (document.querySelector('body').classList.contains('flatUI')) {
-        document.querySelector('body').classList.remove('flatUI');
+    const bodyContainer = document.querySelector('body');
+    
+    if (bodyContainer.classList.contains('flatUI')) {
+        bodyContainer.classList.remove('flatUI');
         updateUIPref(false);
     } else {
-        document.querySelector('body').classList.add('flatUI');
+        bodyContainer.classList.add('flatUI');
         updateUIPref(true);
     }
     return false;

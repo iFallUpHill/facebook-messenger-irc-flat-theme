@@ -133,23 +133,23 @@ body.flatUI {
     ._4ld- {
         width: 33px !important;
         height: 33px !important;
-        @include default-transition();
+        @include generic-transition(all);
     }
 
     ._4ldz {
         width: 33px !important;
         height: 38px !important;
-        @include default-transition();
+        @include generic-transition(all);
     }
 
     ._55lu, ._55lu._57pm {
         width: 18px !important;
-        @include default-transition();
+        @include generic-transition(all);
     }
 
     ._55lu._57xo, ._55lu._57pl {
         width: 15px !important;
-        @include default-transition();
+        @include generic-transition(all);
     }
 
     ._1ht6 {
@@ -181,6 +181,10 @@ body.flatUI {
         content: "+ ";
     }
 
+    ._4rv3 {
+        border-bottom: 1px solid $sidebar_background;
+    }
+    
     @media screen and (max-width: 639px) {
         ._2il3 {
             padding-left: 21px;
