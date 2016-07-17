@@ -10,8 +10,8 @@ const gulp    = require('gulp'),
       config  = {
             src: {
                 sass: [
+                    '!src/scss/_constants.scss',
                     'src/scss/main.scss',
-                    'src/scss/button.scss',
                     'src/scss/*.scss'
                 ],
                 js: 'src/js/scripts.js',

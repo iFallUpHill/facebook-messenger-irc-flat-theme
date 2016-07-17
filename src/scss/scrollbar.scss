@@ -1,0 +1,28 @@
+body.flatUI {
+    ._kmc { // Scrollbar 
+        overflow: hidden;
+
+        &:hover {
+            overflow: auto;
+        }
+        
+        &::-webkit-scrollbar {
+            width: 7px !important;
+            background-color: rgba(29, 29, 29, 0.75) !important;
+            -webkit-border-radius: 100px !important;
+        }
+        
+        &::-webkit-scrollbar:hover {
+            background-color: rgba(0, 0, 0, 0.09);
+        }
+        
+        &::-webkit-scrollbar-thumb:vertical {
+            background-color: rgba(0, 0, 0, 0.4);
+            -webkit-border-radius: 100px;
+        }
+        &::-webkit-scrollbar-thumb:vertical:active, &::-webkit-scrollbar-thumb:vertical:hover {
+            background: rgba(0,0,0,0.7); 
+            -webkit-border-radius: 100px;
+        }
+    }
+}

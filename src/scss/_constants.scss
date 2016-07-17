@@ -1,0 +1,22 @@
+// Colour Constants
+$sidebar_background: rgba(44, 44, 44, 1);
+$header_highlight: rgba(37, 37, 37, 1);
+$default_colour: rgba(49, 49, 49, 1);
+
+// Helpers
+$transparent: rgba(0, 0, 0, 0);
+$default_transition_time: 0.25s;
+
+// Mixins
+@mixin generic-transition($type) {
+    transition: $type $default_transition_time ease-in;
+}
+
+@mixin default-transition() {
+    transition: all $default_transition_time ease-in;
+}
+
+@mixin white-text($opacity, $important:null) {
+    color: rgba(255, 255, 255, $opacity) $important;
+}
+

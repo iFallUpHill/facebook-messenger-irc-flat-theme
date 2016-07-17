@@ -1,3 +1,5 @@
+@import 'constants';
+
 .toggleButton {
     display: table;
     height: 20px;
@@ -6,8 +8,8 @@
     z-index: 9999;
     left: 50px;
     top: 14px;
-    color: rgb(49, 49, 49);
-    border: 1px solid rgb(49, 49, 49);
+    color: $default_colour;
+    border: 1px solid $default_colour;
     font-size: 8px;
     font-weight: 900;
     text-align: center;
@@ -23,6 +25,6 @@
 }
 
 .flatUI .toggleButton {
-    border: 1px solid rgb(255, 255, 255);
-    color: rgb(255, 255, 255);
+    @include white-text(1, !important);
+    border: 1px solid #fff;
 }

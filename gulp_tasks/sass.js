@@ -22,11 +22,7 @@ module.exports = (gulp, config , isDist) => {
                     remove: false,
                     browsers: [
                         'last 2 versions',
-                        '> 5%',
-                        'ie 8',
-                        'ie 9',
-                        'ios 7',
-                        'android 4'
+                        '> 5%'
                     ]
                 }
             ))

@@ -1,34 +1,31 @@
+@import 'constants';
+
 body.flatUI {
 
     ._4sp8, ._4_j5, ._1ht1, ._5l37, ._4eby, ._2y8_, ._5t4c, _15gf, ._4rv3, ._haj, ._54aq {
-        background-color: #2C2C2C !important;
-        -webkit-transition: background-color 0.25s ease-in;
-        transition: background-color 0.25s ease-in;
+        @include generic-transition(background);
+        background-color: $sidebar_background !important;
     }
 
     ._1ht3._1ht1 {
-        background-color: rgba(255,255,255,0.1) !important;
-        -webkit-transition: background-color 0.25s ease-in;
-        transition: background-color 0.25s ease-in;
+        @include white-text(0.1, !important);
+        @include generic-transition(background);
     }
 
     ._1ht1._1ht2, ._5742, ._36ic {
-        background-color: #252525 !important;
-        -webkit-transition: background-color 0.25s ease-in;
-        transition: background-color 0.25s ease-in;
+        @include generic-transition(background);
+        background-color: $header_highlight !important;
     }
 
     ._hh7:active, ._hh7, ._haj, ._5i_d, ._nd_ ._hh7:active, ._hh7:active, ._nd_._-5k ._hh7, ._nd_ ._3058 {
-        background-color: rgba(0,0,0,0) !important;
-        border-color: rgba(0,0,0,0) !important;
-        -webkit-transition: background-color 0.25s ease-in;
-        transition: background-color 0.25s ease-in;
+        @include generic-transition(background);
+        background-color: $transparent !important;
+        border-color: $transparent !important;
     }
 
     ._5iwm ._58al, ._55sg ._kv1 input {
-        background-color: #313131 !important;
-        -webkit-transition: background-color 0.25s ease-in;
-        transition: background-color 0.25s ease-in;
+        @include generic-transition(background);
+        background-color: $default_colour !important;
     }
 
     ._ih3, ._364g, ._3tl0, ._497p, ._2y8z, ._10w4, ._1ht7, ._3tkx, ._3tkz, ._kck,
@@ -37,21 +34,18 @@ body.flatUI {
     ._kcm, ._kck ._58al, ._3x6u, ._4jgs, ._5rh4, ._14-7 ._58ah ._58al, ._1tqi, ._5743,
     ._2jnx, ._2jnz, ._2jnx ._58al, .__6k, .__6l, ._1n-e, ._4eb-, ._19jt, ._374c, ._1ps0,
     ._hh7 ._3oh-, ._5rw4, ._hh7 a, ._nd_ ._hh7 ._3oh-, ._225b, ._3oh- {
-        color: rgba(255,255,255,1) !important;
-        -webkit-transition: color 0.25s ease-in;
-        transition: color 0.25s ease-in;
+        @include white-text(1, !important);
+        @include generic-transition(color);
     }
 
     ._1q5- {
+        @include generic-transition(border-color);
         border-left-color: rgba(0, 0, 0, .20) !important;
-        -webkit-transition: border-color 0.25s ease-in;
-        transition: border-color 0.25s ease-in;
     }
 
     ._2v6o, ._1htf, ._3tky, ._1lj0, ._1ht3 ._1htf, ._1ht3 ._1ht6, ._1ht3 ._1ht7, ._5rp8 ._45m_, .__6m {
-        color: rgba(255,255,255,0.7) !important;
-        -webkit-transition: color 0.25s ease-in;
-        transition: color 0.25s ease-in;
+        @include white-text(0.7, !important);
+        @include generic-transition(color);
     }
 
     .__6j {
@@ -72,9 +66,9 @@ body.flatUI {
     }
 
     ._1t_p {
+        @include white-text(0.1, !important);
         padding-bottom: 15px;
         border-bottom: 1px solid;
-        border-color: rgba(255, 255, 255, 0.1);
     }
 
     ._1t_s, ._ih3 {
@@ -83,7 +77,7 @@ body.flatUI {
     }
 
     ._ih3, ._ih3 ._3oh-, ._1ht6, ._1lj0, ._3eur ._3oh-, ._17w2 ._3oh-, ._55r {
-        color: rgba(255,255,255,1) !important;
+        @include white-text(1, !important);
         font-weight: bold;
         font-size: 14px;
     }
@@ -114,16 +108,12 @@ body.flatUI {
         border-radius: 0 !important;
     }
 
-    ._3058 ._55q._52mr {
-        background-color: rgb(37, 37, 37) !important;
-    }
-
     ._4sp8._li {
-        background-color: rgb(49, 49, 49) !important;
+        background-color: $default_colour !important;
     }
 
     ._o46._3i_m ._3058, ._o46._3i_m ._3058._15gf ._2poz {
-        color: rgba(255,255,255,1) !important;
+        @include white-text(1, !important);
         float: left;
     }
 
@@ -143,23 +133,23 @@ body.flatUI {
     ._4ld- {
         width: 33px !important;
         height: 33px !important;
-        transition: all ease-in 0.25s;
+        @include default-transition();
     }
 
     ._4ldz {
         width: 33px !important;
         height: 38px !important;
-        transition: all ease-in 0.25s;
+        @include default-transition();
     }
 
     ._55lu, ._55lu._57pm {
         width: 18px !important;
-        transition: all ease-in 0.25s;
+        @include default-transition();
     }
 
     ._55lu._57xo, ._55lu._57pl {
         width: 15px !important;
-        transition: all ease-in 0.25s;
+        @include default-transition();
     }
 
     ._1ht6 {
@@ -196,32 +186,4 @@ body.flatUI {
             padding-left: 21px;
         }
     }
-
-    ._kmc { // Scrollbar 
-        overflow: hidden;
-
-        &:hover {
-            overflow: auto;
-        }
-        
-        &::-webkit-scrollbar {
-            width: 7px !important;
-            background-color: rgba(29, 29, 29, 0.75) !important;
-            -webkit-border-radius: 100px !important;
-        }
-        
-        &::-webkit-scrollbar:hover {
-            background-color: rgba(0, 0, 0, 0.09);
-        }
-        
-        &::-webkit-scrollbar-thumb:vertical {
-            background-color: rgba(0, 0, 0, 0.4);
-            -webkit-border-radius: 100px;
-        }
-        &::-webkit-scrollbar-thumb:vertical:active, &::-webkit-scrollbar-thumb:vertical:hover {
-            background: rgba(0,0,0,0.7); 
-            -webkit-border-radius: 100px;
-        }
-    }
-    
 }
