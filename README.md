@@ -37,8 +37,8 @@ gulp build --prod
 
 1. Create your feature branch: `git checkout -b my-new-feature`
 2. Commit your changes: `git commit -m 'Add some feature'`
-3. Push to the branch: `git push origin my-new-feature`
-4. Submit a pull request :clipboard:
+3. Push your branch: `git push origin my-new-feature`
+4. Submit a pull request! :clipboard:
 
 Feel free to help me add new features or improve my code! 
 
@@ -46,17 +46,3 @@ Feel free to help me add new features or improve my code!
 
 This software is free to use under the MIT license.
 See the [LICENSE file](./LICENSE.md) for license text and copyright information.
-
-
-An IRC inspired, flat theme for the Facebook Messenger Web App (messenger.com).
-
-Once installed, press the square icon labelled "IRC" in the top left corner of Messenger to enable the theme. 
-
-This extensions changes the following:
-- Enables a dark, minimal theme for Facebook Messenger
-- Moves all messages to the left-hand side of the screen
-- Modifies image previews to be less intrusive and flow better in the conversation feed
-- Retains all functionality of Messenger  
-
-For reference:
-Messages with a '>' next to them are your own, and messages with a '+' next to them are from the person you are chatting with.
