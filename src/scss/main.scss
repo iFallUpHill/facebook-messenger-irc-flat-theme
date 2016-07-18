@@ -8,7 +8,7 @@ body.flatUI {
     }
 
     ._1ht3._1ht1 {
-        @include white-text(0.1, !important);
+        background-color: rgba(255, 255,255, 0.05) !important;
         @include generic-transition(background);
     }
 
@@ -151,7 +151,7 @@ body.flatUI {
         width: 15px !important;
         @include generic-transition(all);
     }
-
+    
     ._1ht6 {
         max-width: 220px;
     }
