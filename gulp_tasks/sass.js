@@ -1,5 +1,5 @@
 const gulp            = require('gulp'),
-      concat          = require('gulp-concat'),
+      rename          = require('gulp-rename'),
       plumber         = require('gulp-plumber'),
       minifyCSS       = require('gulp-cssnano'),
       sass            = require('gulp-sass'),
@@ -17,7 +17,7 @@ module.exports = (gulp, config , isDist) => {
                 errorHandler: onError
             }))
             .pipe(sass())
-            .pipe(concat(config.dist.min_css))
+            .pipe(rename(config.dist.min_css))
             .pipe(autoprefixer( {
                     remove: false,
                     browsers: [

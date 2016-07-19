@@ -9,11 +9,7 @@ const gulp    = require('gulp'),
       isDist  = argv.prod ? true : false,
       config  = {
             src: {
-                sass: [
-                    '!src/scss/_constants.scss',
-                    'src/scss/main.scss',
-                    'src/scss/*.scss'
-                ],
+                sass: 'src/scss/all.scss',
                 js: 'src/js/scripts.js',
                 img: 'src/img/**/*',
                 manifest: 'src/manifest.json'
