@@ -33,7 +33,7 @@ body.flatUI {
     ._4ebz, ._209g, ._1ht6, ::-webkit-input-placeholder, ._4rpj, ._2jnt, ._3eus, ._2jnv,
     ._kcm, ._kck ._58al, ._3x6u, ._4jgs, ._5rh4, ._14-7 ._58ah ._58al, ._1tqi, ._5743,
     ._2jnx, ._2jnz, ._2jnx ._58al, .__6k, .__6l, ._1n-e, ._4eb-, ._19jt, ._374c, ._1ps0,
-    ._hh7 ._3oh-, ._5rw4, ._hh7 a, ._nd_ ._hh7 ._3oh-, ._225b, ._3oh- {
+    ._hh7 ._3oh-, ._5rw4, ._hh7 a, ._nd_ ._hh7 ._3oh-, ._225b, ._3oh-, ._3q34 {
         @include white-text(1, !important);
         @include generic-transition(color);
     }
@@ -47,7 +47,12 @@ body.flatUI {
         @include white-text(0.7, !important);
         @include generic-transition(color);
     }
-
+	
+	._3q35, ._4g0h {
+        @include white-text(0.4, !important);
+        @include generic-transition(color);
+    }
+	
     .__6j {
         margin: 0;
     }
