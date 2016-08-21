@@ -139,6 +139,10 @@ body.flatUI {
         float: left;
     }
 
+	._hh7._s1-._52mr._1fz8._1nqp {
+		float: left;
+	}
+	
     ._hh7>span>a:hover {
         background: #6bc8c2;
     }
@@ -194,7 +198,7 @@ body.flatUI {
     a:focus {
         outline: 0 !important;
     }
-
+	
     ._3i_m ._3oh-::before {
         content: "> ";
     }
@@ -203,6 +207,14 @@ body.flatUI {
         content: "+ ";
     }
 
+	._1mj0._2e-4._3oh- {
+		color: $default_colour !important;
+		
+		&::before {
+			content: "";	
+		}
+	}
+	
     ._4rv3 {
         border-bottom: 1px solid $sidebar_background;
     }
