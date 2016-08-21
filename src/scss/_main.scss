@@ -76,10 +76,22 @@ body.flatUI {
         border-bottom: 1px solid;
     }
 
-    ._1t_s, ._ih3, ._41ud {
+	._17pz {
+		>._1t_p {
+			border-bottom: 0px;
+			padding-bottom: 0px;
+		}
+	}
+	
+    ._1t_s, ._41ud {
         margin-left: 12px;
         padding-left: 0px;
     }
+	
+	._ih3 {
+		margin-left: 0px;
+		padding-left: 0px;
+	}
 
     ._ih3, ._ih3 ._3oh-, ._1ht6, ._1lj0, ._3eur ._3oh-, ._17w2 ._3oh-, ._55r {
         @include white-text(1, !important);
@@ -88,10 +100,15 @@ body.flatUI {
     }
 
     ._3058._52mr {
-        max-width: 85%;
-        padding: 0;
+		padding: 0;
+		max-width: 100%;
+		border-bottom: 0px !important;
+		
+		&._ui9 {
+			max-width: 85%;
+		}
     }
-
+	
     .__6j .__6k ._4ik4._4ik5 {
         line-height: normal !important;
         height: auto !important;
