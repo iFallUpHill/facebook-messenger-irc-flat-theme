@@ -29,7 +29,7 @@ body.flatUI {
     }
 
     ._ih3, ._364g, ._3tl0, ._497p, ._2y8z, ._10w4, ._1ht7, ._3tkx, ._3tkz, ._kck,
-    ._1pr_, .__rm+.uiInputLabelLabel, ._llq, ._36zg, ._58ak input, ._4rv3, ._3szq, 
+    ._1pr_, .__rm+.uiInputLabelLabel, ._llq, ._36zg, ._58ak input, ._4rv3, ._3szq,
     ._4ebz, ._209g, ._1ht6, ::-webkit-input-placeholder, ._4rpj, ._2jnt, ._3eus, ._2jnv,
     ._kcm, ._kck ._58al, ._3x6u, ._4jgs, ._5rh4, ._14-7 ._58ah ._58al, ._1tqi, ._5743,
     ._2jnx, ._2jnz, ._2jnx ._58al, .__6k, .__6l, ._1n-e, ._4eb-, ._19jt, ._374c, ._1ps0,
@@ -47,12 +47,12 @@ body.flatUI {
         @include white-text(0.7, !important);
         @include generic-transition(color);
     }
-	
+
 	._3q35, ._4g0h {
         @include white-text(0.4, !important);
         @include generic-transition(color);
     }
-	
+
     .__6j {
         margin: 0;
     }
@@ -82,12 +82,12 @@ body.flatUI {
 			padding-bottom: 0px;
 		}
 	}
-	
+
     ._1t_s, ._41ud {
         margin-left: 12px;
         padding-left: 0px;
     }
-	
+
 	._ih3 {
 		margin-left: 0px;
 		padding-left: 0px;
@@ -103,12 +103,12 @@ body.flatUI {
 		padding: 0;
 		max-width: 100%;
 		border-bottom: 0px !important;
-		
+
 		&._ui9 {
 			max-width: 85%;
 		}
     }
-	
+
     .__6j .__6k ._4ik4._4ik5 {
         line-height: normal !important;
         height: auto !important;
@@ -139,10 +139,10 @@ body.flatUI {
         float: left;
     }
 
-	._hh7._s1-._52mr._1fz8._1nqp {
+	._hh7._s1-._52mr._1fz8._1nqp, ._nd_ ._2n8i, ._3zvs {
 		float: left;
 	}
-	
+
     ._hh7>span>a:hover {
         background: #6bc8c2;
     }
@@ -177,7 +177,7 @@ body.flatUI {
         width: 15px !important;
         @include generic-transition(all);
     }
-    
+
     ._1ht6 {
         max-width: 220px;
     }
@@ -198,7 +198,7 @@ body.flatUI {
     a:focus {
         outline: 0 !important;
     }
-	
+
     ._3i_m ._3oh-::before {
         content: "> ";
     }
@@ -209,16 +209,16 @@ body.flatUI {
 
 	._1mj0._2e-4._3oh- {
 		color: $default_colour !important;
-		
+
 		&::before {
-			content: "";	
+			content: "";
 		}
 	}
-	
+
     ._4rv3 {
         border-bottom: 1px solid $sidebar_background;
     }
-    
+
     @media screen and (max-width: 639px) {
         ._2il3 {
             padding-left: 21px;

@@ -1,15 +1,15 @@
 {
     "name": "IRC Inspired Theme for Facebook Messenger",
-    "version": "1.2.6",
+    "version": "1.2.7",
     "manifest_version": 2,
     "description": "An IRC inspired theme for Facebook Messenger (messenger.com)",
     "permissions": [
         "storage"
     ],
-    "icons": { 
+    "icons": {
         "16": "img/icon/icon16.png",
         "48": "img/icon/icon48.png",
-        "128": "img/icon/icon128.png" 
+        "128": "img/icon/icon128.png"
     },
     "content_scripts": [
         {
