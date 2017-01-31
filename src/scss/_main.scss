@@ -136,11 +136,11 @@ body.flatUI {
 
     ._o46._3i_m ._3058, ._o46._3i_m ._3058._15gf ._2poz {
         @include white-text(1, !important);
-        float: left;
+        float: left !important;
     }
 
 	._hh7._s1-._52mr._1fz8._1nqp, ._nd_ ._2n8i, ._3zvs {
-		float: left;
+		float: left !important;
 	}
 
     ._hh7>span>a:hover {
