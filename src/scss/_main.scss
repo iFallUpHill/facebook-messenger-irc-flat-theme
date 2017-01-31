@@ -2,14 +2,14 @@
 
 body.flatUI {
 
-    ._4sp8, ._4_j5, ._1ht1, ._5l37, ._4eby, ._2y8_, ._5t4c, _15gf, ._4rv3, ._haj, ._54aq {
+    ._4sp8, ._4_j5, ._1ht1, ._5l37, ._4eby, ._2y8_, ._5t4c, ._4rv3, ._haj, ._54aq {
         @include generic-transition(background);
         background-color: $sidebar_background !important;
     }
 
     ._1ht3._1ht1 {
-        background-color: rgba(255, 255,255, 0.05) !important;
         @include generic-transition(background);
+        background-color: rgba(255, 255,255, 0.05) !important;
     }
 
     ._1ht1._1ht2, ._5742, ._36ic {
@@ -23,7 +23,7 @@ body.flatUI {
         border-color: $transparent !important;
     }
 
-    ._5iwm ._58al, ._55sg ._kv1 input {
+    ._5iwm ._58al, ._55sg ._kv1 input, ._33p7 {
         @include generic-transition(background);
         background-color: $default_colour !important;
     }
@@ -33,7 +33,7 @@ body.flatUI {
     ._4ebz, ._209g, ._1ht6, ::-webkit-input-placeholder, ._4rpj, ._2jnt, ._3eus, ._2jnv,
     ._kcm, ._kck ._58al, ._3x6u, ._4jgs, ._5rh4, ._14-7 ._58ah ._58al, ._1tqi, ._5743,
     ._2jnx, ._2jnz, ._2jnx ._58al, .__6k, .__6l, ._1n-e, ._4eb-, ._19jt, ._374c, ._1ps0,
-    ._hh7 ._3oh-, ._5rw4, ._hh7 a, ._nd_ ._hh7 ._3oh-, ._225b, ._3oh-, ._3q34 {
+    ._hh7 ._3oh-, ._5rw4, ._hh7 a, ._nd_ ._hh7 ._3oh-, ._225b, ._3oh-, ._3q34, ._364g {
         @include white-text(1, !important);
         @include generic-transition(color);
     }
@@ -109,7 +109,7 @@ body.flatUI {
 		}
     }
 
-    .__6j .__6k ._4ik4._4ik5 {
+    .__6j .__6k ._4ik4._4ik5, ._3szq {
         line-height: normal !important;
         height: auto !important;
     }

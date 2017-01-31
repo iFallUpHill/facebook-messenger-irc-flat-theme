@@ -1,0 +1,36 @@
+@import 'constants';
+
+body.flatUI {
+
+	._4eby {
+		border-radius: 0px;
+	}
+
+	._1u5d {
+		background: none !important;
+	}
+
+	// ._4u-c._9hq {
+	// 	@include generic-transition(background);
+ //        background-color: $sidebar_background;
+	// }
+
+	._4ebz {
+		@include generic-transition(background);
+        background-color: $header_highlight !important;
+	}
+
+	._374b {
+        @include white-text(0.1, !important);
+        border-bottom: 1px solid;
+
+        &:last-child {
+    		border-bottom: none !important;	
+        }
+    }
+
+    ._2c9i ._4ebz {
+    	border-bottom: none;
+    }
+
+}
