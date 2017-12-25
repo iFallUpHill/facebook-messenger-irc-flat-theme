@@ -19,7 +19,7 @@ module.exports = (gulp, config , isDist) => {
             .pipe(gulpif(isDist, stripDebug()))
             .pipe(eslint())
             .pipe(eslint.format())
-            .pipe(babel({presets: ['es2015']}))
+            .pipe(babel({presets: ['env']}))
             .pipe(gulpif(isDist, uglify()))
             .pipe(concat(config.dist.min_js))
             .pipe(gulpif(!isDist, sourcemaps.write()))
