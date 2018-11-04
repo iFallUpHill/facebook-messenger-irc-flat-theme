@@ -2,19 +2,47 @@
 
 body.flatUI {
 
-    ._4sp8, ._4_j5, ._1ht1, ._5l37, ._4eby, ._2y8_, ._5t4c, ._4rv3, ._haj, ._54aq {
+    ._4_j4 {
+        @include generic-transition(background);
+        background-color: $chat_background !important;
+    }
+
+    ._4sp8, ._4_j5, ._1ht1, ._5l37, ._4eby, ._2y8_, ._5t4c, ._haj, ._54aq {
         @include generic-transition(background);
         background-color: $sidebar_background !important;
     }
 
     ._1ht3._1ht1 {
         @include generic-transition(background);
-        background-color: rgba(255, 255,255, 0.05) !important;
+        background-color: $unread_highlight !important;
     }
 
-    ._1ht1._1ht2, ._5742, ._36ic {
+    ._5742, ._36ic {
         @include generic-transition(background);
         background-color: $header_highlight !important;
+    }
+
+    ._1ht1._1ht2 {
+        @include generic-transition(background);
+        background-color: $active_highlight !important;
+    }
+
+    ._1ht1._569x {
+        @include generic-transition(background);
+        background-color: $muted_highlight !important;
+        ._1htf {
+            visibility: hidden;
+
+            &::before {
+                visibility: visible;
+                content: 'This chat is muted.'
+            }
+        }
+    }
+
+    ._4rv3 {
+        @include generic-transition(background);
+        background-color: $message_box_background !important;
     }
 
     ._hh7:active, ._hh7, ._haj, ._5i_d, ._nd_ ._hh7:active, ._hh7:active, ._nd_._-5k ._hh7, ._nd_ ._3058 {
@@ -25,7 +53,7 @@ body.flatUI {
 
     ._5iwm ._58al, ._55sg ._kv1 input, ._33p7 {
         @include generic-transition(background);
-        background-color: $default_colour !important;
+        background-color: $search_background !important;
     }
 
     ._ih3, ._364g, ._3tl0, ._497p, ._2y8z, ._10w4, ._1ht7, ._3tkx, ._3tkz, ._kck,
@@ -34,7 +62,7 @@ body.flatUI {
     ._kcm, ._kck ._58al, ._3x6u, ._4jgs, ._5rh4, ._14-7 ._58ah ._58al, ._1tqi, ._5743,
     ._2jnx, ._2jnz, ._2jnx ._58al, .__6k, .__6l, ._1n-e, ._4eb-, ._19jt, ._374c, ._1ps0,
     ._hh7 ._3oh-, ._5rw4, ._hh7 a, ._nd_ ._hh7 ._3oh-, ._225b, ._3oh-, ._3q34, ._364g,
-    ._2620, ._4u4_>h3 {
+    ._2620, ._4u4_>h3, ._3oh- a {
         @include white-text(1, !important);
         @include generic-transition(color);
     }
@@ -91,7 +119,15 @@ body.flatUI {
 
 	._ih3 {
 		margin-left: 0px;
-		padding-left: 0px;
+        padding-left: 0px;
+        margin-bottom: 6px;
+        
+        &._-ne {
+            height: inherit !important;
+            opacity: inherit !important;
+            width: inherit !important;
+            position: inherit !important;
+        }
 	}
 
     ._ih3, ._ih3 ._3oh-, ._1ht6, ._1lj0, ._3eur ._3oh-, ._17w2 ._3oh-, ._55r {
@@ -200,14 +236,6 @@ body.flatUI {
         outline: 0 !important;
     }
 
-    ._3i_m ._aok > ._58nk._3oh-::before, ._3i_m ._aok > span > ._58nk._3oh-::before {
-        content: "> ";
-    }
-
-    ._29_7 ._aok > ._58nk._3oh-::before, ._29_7 ._aok > span > ._58nk._3oh-::before {
-        content: "+ ";
-    }
-
     a._52mr._2q1l {
         background: transparent;
         margin-left: 13px;
@@ -221,10 +249,6 @@ body.flatUI {
 			content: "";
 		}
 	}
-
-    ._4rv3 {
-        border-bottom: 1px solid $sidebar_background;
-    }
 
     ._4a0v._4a0x, ._hh7._aol ._aok {
         float: right;
@@ -244,7 +268,7 @@ body.flatUI {
 
     ._4kf7.preview {
         bottom: -13px;
-        right: -13px;
+        right: -26px;
     }
 
     @media screen and (max-width: 639px) {

@@ -1,7 +1,13 @@
 // Colour Constants
-$sidebar_background: rgba(44, 44, 44, 1);
-$header_highlight: rgba(37, 37, 37, 1);
-$default_colour: rgba(49, 49, 49, 1);
+$sidebar_background: rgba(47, 49, 53, 1);
+$header_highlight: rgba(47, 49, 53, 1);
+$chat_background: rgba(54, 57, 64, 1);
+$search_background: rgb(74, 77, 82);
+$default_colour: rgb(74, 77, 82);
+$unread_highlight: rgba(111, 55, 202, 0.2);
+$active_highlight: rgba(67, 70, 77, 1);
+$muted_highlight: rgba(75, 84, 202, 0.1);
+$message_box_background: rgb(73, 76, 83);
 
 // Helpers
 $transparent: rgba(0, 0, 0, 0);
