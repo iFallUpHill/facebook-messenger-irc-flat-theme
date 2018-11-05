@@ -200,12 +200,13 @@ body.flatUI {
     ._4ld- {
         width: 33px !important;
         height: 33px !important;
+        margin: 0 auto;
         @include generic-transition(all);
     }
 
     ._4ldz {
         width: 33px !important;
-        height: 38px !important;
+        height: 33px !important;
         @include generic-transition(all);
     }
 
@@ -275,9 +276,21 @@ body.flatUI {
         right: -26px;
     }
 
-    @media screen and (max-width: 639px) {
+    .fbNubFlyoutAttachments {
+        display: none !important;
+    }
+
+    @media screen and (max-width: 700px) {
+        ._6zkb {
+            justify-content: center;
+        }
+
         ._2il3 {
-            padding-left: 21px;
+            padding-left: 0px;
+        }
+
+        ._1ht1 ._1qt3 {
+            margin-right: 0px;
         }
     }
 }
