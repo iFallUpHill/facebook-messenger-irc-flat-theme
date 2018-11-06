@@ -17,15 +17,18 @@ function updateUIPref(UIPref) {
     });
 }
 
-function toggleUI() {
+function toggleUI(event) {
     const bodyContainer = document.querySelector('body');
+    const wasCmdCtrlClick = event.ctrlKey || event.metaKey;
     
     if (bodyContainer.classList.contains('flatUI')) {
         bodyContainer.classList.remove('flatUI');
+        bodyContainer.classList.remove('ircMode');
         updateUIPref(false);
     } else {
         bodyContainer.classList.add('flatUI');
-        updateUIPref(true);
+        if (wasCmdCtrlClick) bodyContainer.classList.add('ircMode');
+        updateUIPref(wasCmdCtrlClick ? 'ircMode' : 'flatUI');
     }
     return false;
 }
@@ -49,10 +52,14 @@ chrome.runtime.sendMessage({}, () => {
             toggleButton.appendChild(buttonText);
 
             getUIPref().then( pref => {
-                if(pref.enableFlatUI) {
+                if (pref.enableFlatUI === 'flatUI') {
                     document.querySelector('body').classList.add('flatUI');
+                } else if (pref.enableFlatUI === 'ircMode') {
+                    document.querySelector('body').classList.add('flatUI');
+                    document.querySelector('body').classList.add('ircMode');
                 } else {
                     document.querySelector('body').classList.remove('flatUI');
+                    document.querySelector('body').classList.remove('ircMode');
                 }
                 document.getElementById('toggleButton').onclick = toggleUI;
             });

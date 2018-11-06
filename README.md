@@ -9,6 +9,17 @@ Download it here: https://chrome.google.com/webstore/detail/jkocbkfbiljhcdjopoei
 - Moves all messages to the left-hand side of the screen
 - Modifies image previews to be less intrusive and flow better in the conversation feed
 - Retains all functionality of Messenger  
+- Second "IRC" mode for even more minimalism (See Below)
+
+## Modes
+**Standard**
+- Enable this mode with a `Click` on the IRC button in the top left corner
+
+**IRC**
+- Enable this mode with a `Cmd/Ctrl` + `Click` on the IRC button in the top left corner
+- This mode removes names from 1-on-1 conversations and only shows participant names in group conversations
+- Messages sent by the current user are prepended with a `">"`
+- Messages sent by other participants are prepended with a `"+"`
 
 ## Development
 

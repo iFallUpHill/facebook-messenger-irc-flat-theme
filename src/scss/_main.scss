@@ -120,19 +120,24 @@ body.flatUI {
 	._ih3 {
 		margin-left: 0px;
         padding-left: 0px;
-        margin-bottom: 6px;
-        
-        &._-ne {
-            height: inherit !important;
-            opacity: inherit !important;
-        }
+    }
+    
+    &:not(.ircMode) {
+        ._ih3 {
+            margin-bottom: 6px;
+            
+            &._-ne {
+                height: inherit !important;
+                opacity: inherit !important;
+            }
 
-        &.accessible_elem {
-            height: inherit !important;
-            width: inherit !important;
-            position: inherit !important;
+            &.accessible_elem {
+                height: inherit !important;
+                width: inherit !important;
+                position: inherit !important;
+            }
         }
-	}
+    }
 
     ._ih3, ._ih3 ._3oh-, ._1ht6, ._1lj0, ._3eur ._3oh-, ._17w2 ._3oh-, ._55r {
         @include white-text(1, !important);
