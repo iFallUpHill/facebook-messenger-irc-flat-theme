@@ -1,7 +1,6 @@
 @import 'constants';
 
 body.flatUI {
-
     ._4_j4 {
         @include generic-transition(background);
         background-color: $chat_background !important;
@@ -62,7 +61,7 @@ body.flatUI {
     ._kcm, ._kck ._58al, ._3x6u, ._4jgs, ._5rh4, ._14-7 ._58ah ._58al, ._1tqi, ._5743,
     ._2jnx, ._2jnz, ._2jnx ._58al, .__6k, .__6l, ._1n-e, ._4eb-, ._19jt, ._374c, ._1ps0,
     ._hh7 ._3oh-, ._5rw4, ._hh7 a, ._nd_ ._hh7 ._3oh-, ._225b, ._3oh-, ._3q34, ._364g,
-    ._2620, ._4u4_>h3, ._3oh- a {
+    ._2620, ._4u4_>h3, ._3oh- a, ._5qsj {
         @include white-text(1, !important);
         @include generic-transition(color);
     }
@@ -80,6 +79,10 @@ body.flatUI {
 	._3q35, ._4g0h {
         @include white-text(0.4, !important);
         @include generic-transition(color);
+    }
+
+    ._4gd0 {
+        background: none;
     }
 
     .__6j {

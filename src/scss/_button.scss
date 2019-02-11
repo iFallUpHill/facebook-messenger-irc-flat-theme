@@ -1,30 +1,42 @@
 @import 'constants';
 
 .toggleButton {
-    display: table;
-    height: 20px;
-    width: 20px;
-    position: absolute;
-    z-index: 9999;
-    left: 50px;
-    top: 14px;
-    color: $default_colour;
-    border: 1px solid $default_colour;
-    font-size: 8px;
-    font-weight: 900;
-    text-align: center;
+  display: table;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  z-index: 9999;
+  left: 50px;
+  top: 14px;
+  color: $default_colour;
+  border: 1px solid $default_colour;
+  font-size: 8px;
+  font-weight: 900;
+  text-align: center;
 
-    .toggleText {
-        display: table-cell;
-        vertical-align: middle;
-    }
+  .toggleText {
+    display: table-cell;
+    vertical-align: middle;
+  }
 
-    &:hover {
-        cursor: pointer;
-    }
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .flatUI .toggleButton {
-    @include white-text(1, !important);
-    border: 1px solid #fff;
+  @include white-text(1, !important);
+  border: 1px solid #fff;
+}
+
+body.flatUI {
+  ._4rv6, ._4ce_ {
+    filter: invert(1);
+  }
+  ._4rv6 {
+    opacity: 0.5;
+  }
+  ._4ce_ {
+    opacity: 0.6;
+  }
 }

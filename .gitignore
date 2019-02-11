@@ -2,3 +2,4 @@ node_modules
 psd
 zipped
 *.DS_Store
+*.zip
