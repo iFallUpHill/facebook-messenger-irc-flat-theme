@@ -6,8 +6,8 @@
   width: 20px;
   position: absolute;
   z-index: 9999;
-  left: 50px;
-  top: 14px;
+  left: 144px;
+  top: 20px;
   color: $default_colour;
   border: 1px solid $default_colour;
   font-size: 8px;
@@ -21,6 +21,10 @@
 
   &:hover {
     cursor: pointer;
+  }
+  @media screen and (max-width: 900px) {
+    top: 35px;
+    left: 55px;
   }
 }
 

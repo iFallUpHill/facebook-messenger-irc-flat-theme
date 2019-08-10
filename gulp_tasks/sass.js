@@ -1,16 +1,15 @@
-const gulp            = require('gulp'),
-      rename          = require('gulp-rename'),
-      plumber         = require('gulp-plumber'),
-      minifyCSS       = require('gulp-cssnano'),
-      sass            = require('gulp-sass'),
-      autoprefixer    = require('gulp-autoprefixer'),
-      uglify          = require('gulp-uglify'),
-      sourcemaps      = require('gulp-sourcemaps'),
-      gulpif          = require('gulp-if'),
-      onError         = require('./helpers/onError.js');
+const gulp = require('gulp'),
+    rename = require('gulp-rename'),
+    plumber = require('gulp-plumber'),
+    minifyCSS = require('gulp-cssnano'),
+    sass = require('gulp-sass'),
+    autoprefixer = require('gulp-autoprefixer'),
+    sourcemaps = require('gulp-sourcemaps'),
+    gulpif = require('gulp-if'),
+    onError = require('./helpers/onError.js');
 
-module.exports = (gulp, config , isDist) => {
-    return () => {
+module.exports = (gulp, config, isDist) => {
+    return (done) => {
         gulp.src(config.src.sass)
             .pipe(gulpif(!isDist, sourcemaps.init()))
             .pipe(plumber({
@@ -18,16 +17,10 @@ module.exports = (gulp, config , isDist) => {
             }))
             .pipe(sass())
             .pipe(rename(config.dist.min_css))
-            .pipe(autoprefixer( {
-                    remove: false,
-                    browsers: [
-                        'last 2 versions',
-                        '> 5%'
-                    ]
-                }
-            ))
+            .pipe(autoprefixer())
             .pipe(minifyCSS())
             .pipe(gulpif(!isDist, sourcemaps.write()))
             .pipe(gulp.dest(config.dist.css))
+        done();
     };
 };

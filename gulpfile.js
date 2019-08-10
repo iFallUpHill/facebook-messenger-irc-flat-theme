@@ -5,11 +5,10 @@
 const gulp    = require('gulp'),
       argv    = require('yargs').argv,
       del     = require('del'),
-      runSeq  = require("run-sequence"),
       isDist  = argv.prod ? true : false,
       config  = {
             src: {
-                sass: 'src/scss/all.scss',
+                sass: 'src/scss/**/*.scss',
                 js: 'src/js/scripts.js',
                 img: 'src/img/**/*',
                 manifest: 'src/manifest.json'
@@ -46,33 +45,36 @@ gulp.task('manifest', getTask('manifest'));
 // Extra Task: Clean
 // --------------------------------------------------------------------
 
-gulp.task('clean', function() {
-    del('dist');
+gulp.task('clean', () => {
+    return del('dist');
 });
 
 // --------------------------------------------------------------------
 // Extra Task: Watch
 // --------------------------------------------------------------------
 
-gulp.task('watch', function() {
-    gulp.watch(config.src.sass, ['sass']);
-    gulp.watch(config.src.js, ['js']);
-    gulp.watch(config.src.img, ['img']);
-    gulp.watch(config.src.manifest, ['manifest']);
+gulp.task('watch', () => {
+    gulp.watch(config.src.sass, gulp.series('sass'));
+    gulp.watch(config.src.js, gulp.series('js'));
+    gulp.watch(config.src.img, gulp.series('img'));
+    gulp.watch(config.src.manifest, gulp.series('manifest'));
 });
 
 // --------------------------------------------------------------------
 // Task Runner: Build (Use --prod for production build)
 // --------------------------------------------------------------------
 
-gulp.task('build', function(callback) {
-    runSeq('clean', ['sass', 'js', 'img', 'manifest'], callback);
-});
+gulp.task('build', gulp.series(
+    'clean',
+    gulp.parallel('sass', 'js', 'img', 'manifest')
+));
 
 // --------------------------------------------------------------------
 // Task Runner: Default
 // --------------------------------------------------------------------
 
-gulp.task('default', function(callback) {
-    runSeq('clean', ['sass', 'js', 'img', 'manifest'], 'watch', callback);
-});
+gulp.task('default', gulp.series(
+    'clean',
+    gulp.parallel('sass', 'js', 'img', 'manifest'),
+    'watch'
+));

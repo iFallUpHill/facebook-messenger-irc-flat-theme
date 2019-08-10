@@ -1,4 +1,4 @@
-@import 'constants';
+@import "constants";
 
 body.flatUI {
     ._4_j4 {
@@ -6,7 +6,18 @@ body.flatUI {
         background-color: $chat_background !important;
     }
 
-    ._4sp8, ._4_j5, ._1ht1, ._5l37, ._4eby, ._2y8_, ._5t4c, ._haj, ._54aq {
+    ._4sp8,
+    ._4_j5,
+    ._1ht1,
+    ._5l37,
+    ._4eby,
+    ._2y8_,
+    ._5t4c,
+    ._haj,
+    ._54aq,
+    ._85nf,
+    ._5r8m,
+    ._4pi8 {
         @include generic-transition(background);
         background-color: $sidebar_background !important;
     }
@@ -16,14 +27,19 @@ body.flatUI {
         background-color: $unread_highlight !important;
     }
 
-    ._5742, ._36ic {
+    ._5742,
+    ._36ic {
         @include generic-transition(background);
         background-color: $header_highlight !important;
     }
 
-    ._1ht1._1ht2 {
+    ._1ht1._1ht2,
+    ._1uwx {
         @include generic-transition(background);
         background-color: $active_highlight !important;
+        &._1uwz {
+            background-color: $muted_highlight !important;
+        }
     }
 
     ._1ht1._569x {
@@ -34,49 +50,123 @@ body.flatUI {
 
             &::before {
                 visibility: visible;
-                content: 'This chat is muted.'
+                content: "This chat is muted.";
             }
         }
     }
 
-    ._4rv3 {
+    ._4rv3,
+    ._5irm._7mkm,
+    ._7t1o {
         @include generic-transition(background);
         background-color: $message_box_background !important;
     }
 
-    ._hh7:active, ._hh7, ._haj, ._5i_d, ._nd_ ._hh7:active, ._hh7:active, ._nd_._-5k ._hh7, ._nd_ ._3058 {
+    ._hh7:active,
+    ._hh7,
+    ._haj,
+    ._5i_d,
+    ._nd_ ._hh7:active,
+    ._hh7:active,
+    ._nd_._-5k ._hh7,
+    ._nd_ ._3058 {
         @include generic-transition(background);
         background-color: $transparent !important;
         border-color: $transparent !important;
     }
 
-    ._5iwm ._58al, ._55sg ._kv1 input, ._33p7 {
+    ._43by._43by {
+        background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%) !important;
+    }
+
+    ._5iwm ._58al,
+    ._55sg ._kv1 input,
+    ._33p7,
+    ._2pgc {
         @include generic-transition(background);
         background-color: $search_background !important;
     }
 
-    ._ih3, ._364g, ._3tl0, ._497p, ._2y8z, ._10w4, ._1ht7, ._3tkx, ._3tkz, ._kck,
-    ._1pr_, .__rm+.uiInputLabelLabel, ._llq, ._36zg, ._58ak input, ._4rv3, ._3szq,
-    ._4ebz, ._209g, ._1ht6, ::-webkit-input-placeholder, ._4rpj, ._2jnt, ._3eus, ._2jnv,
-    ._kcm, ._kck ._58al, ._3x6u, ._4jgs, ._5rh4, ._14-7 ._58ah ._58al, ._1tqi, ._5743,
-    ._2jnx, ._2jnz, ._2jnx ._58al, .__6k, .__6l, ._1n-e, ._4eb-, ._19jt, ._374c, ._1ps0,
-    ._hh7 ._3oh-, ._5rw4, ._hh7 a, ._nd_ ._hh7 ._3oh-, ._225b, ._3oh-, ._3q34, ._364g,
-    ._2620, ._4u4_>h3, ._3oh- a, ._5qsj {
+    ._ih3,
+    ._364g,
+    ._3tl0,
+    ._497p,
+    ._2y8z,
+    ._10w4,
+    ._1ht7,
+    ._3tkx,
+    ._3tkz,
+    ._kck,
+    ._1pr_,
+    .__rm + .uiInputLabelLabel,
+    ._llq,
+    ._36zg,
+    ._58ak input,
+    ._4rv3,
+    ._3szq,
+    ._4ebz,
+    ._209g,
+    ._1ht6,
+    ::-webkit-input-placeholder,
+    ._4rpj,
+    ._2jnt,
+    ._3eus,
+    ._2jnv,
+    ._kcm,
+    ._kck ._58al,
+    ._3x6u,
+    ._4jgs,
+    ._5rh4,
+    ._14-7 ._58ah ._58al,
+    ._1tqi,
+    ._5743,
+    ._2jnx,
+    ._2jnz,
+    ._2jnx ._58al,
+    .__6k,
+    .__6l,
+    ._1n-e,
+    ._4eb-,
+    ._19jt,
+    ._374c,
+    ._1ps0,
+    ._hh7 ._3oh-,
+    ._5rw4,
+    ._hh7 a,
+    ._nd_ ._hh7 ._3oh-,
+    ._225b,
+    ._3oh-,
+    ._3q34,
+    ._364g,
+    ._2620,
+    ._4u4_ > h3,
+    ._3oh- a,
+    ._5qsj,
+    ._6-xo {
         @include white-text(1, !important);
         @include generic-transition(color);
     }
 
     ._1q5- {
         @include generic-transition(border-color);
-        border-left-color: rgba(0, 0, 0, .20) !important;
+        border-left-color: rgba(0, 0, 0, 0.2) !important;
     }
 
-    ._2v6o, ._1htf, ._3tky, ._1lj0, ._1ht3 ._1htf, ._1ht3 ._1ht6, ._1ht3 ._1ht7, ._5rp8 ._45m_, .__6m {
+    ._2v6o,
+    ._1htf,
+    ._3tky,
+    ._1lj0,
+    ._1ht3 ._1htf,
+    ._1ht3 ._1ht6,
+    ._1ht3 ._1ht7,
+    ._5rp8 ._45m_,
+    .__6m {
         @include white-text(0.7, !important);
         @include generic-transition(color);
     }
 
-	._3q35, ._4g0h {
+    ._3q35,
+    ._4g0h {
         @include white-text(0.4, !important);
         @include generic-transition(color);
     }
@@ -108,27 +198,28 @@ body.flatUI {
         border-bottom: 1px solid;
     }
 
-	._17pz {
-		>._1t_p {
-			border-bottom: 0px;
-			padding-bottom: 0px;
-		}
-	}
+    ._17pz {
+        > ._1t_p {
+            border-bottom: 0px;
+            padding-bottom: 0px;
+        }
+    }
 
-    ._1t_s, ._41ud {
+    ._1t_s,
+    ._41ud {
         margin-left: 12px;
         padding-left: 0px;
     }
 
-	._ih3 {
-		margin-left: 0px;
+    ._ih3 {
+        margin-left: 0px;
         padding-left: 0px;
     }
-    
+
     &:not(.ircMode) {
         ._ih3 {
             margin-bottom: 6px;
-            
+
             &._-ne {
                 height: inherit !important;
                 opacity: inherit !important;
@@ -142,23 +233,30 @@ body.flatUI {
         }
     }
 
-    ._ih3, ._ih3 ._3oh-, ._1ht6, ._1lj0, ._3eur ._3oh-, ._17w2 ._3oh-, ._55r {
+    ._ih3,
+    ._ih3 ._3oh-,
+    ._1ht6,
+    ._1lj0,
+    ._3eur ._3oh-,
+    ._17w2 ._3oh-,
+    ._55r {
         @include white-text(1, !important);
         font-weight: bold;
         font-size: 14px;
     }
 
     ._3058._52mr {
-		padding: 0;
-		max-width: 100%;
-		border-bottom: 0px !important;
+        padding: 0;
+        max-width: 100%;
+        border-bottom: 0px !important;
 
-		&._ui9 {
-			max-width: 85%;
-		}
+        &._ui9 {
+            max-width: 85%;
+        }
     }
 
-    .__6j .__6k ._4ik4._4ik5, ._3szq {
+    .__6j .__6k ._4ik4._4ik5,
+    ._3szq {
         line-height: normal !important;
         height: auto !important;
     }
@@ -172,10 +270,11 @@ body.flatUI {
     }
 
     ._2poz._52mr._ui9._2n8h._2n8i > ._4tsk._52mr {
-        display: inline-block
+        display: inline-block;
     }
 
-    ._3058 ._mxz, ._3058 ._52mr {
+    ._3058 ._mxz,
+    ._3058 ._52mr {
         border-radius: 0 !important;
     }
 
@@ -183,20 +282,27 @@ body.flatUI {
         background-color: $default_colour !important;
     }
 
-    ._o46._3i_m ._3058, ._o46._3i_m ._3058._15gf ._2poz {
+    ._o46._3i_m ._3058,
+    ._o46._3i_m ._3058._15gf ._2poz {
         @include white-text(1, !important);
         float: left !important;
     }
 
-	._hh7._s1-._52mr._1fz8._1nqp, ._nd_ ._2n8i, ._3zvs {
-		float: left !important;
-	}
+    ._hh7._s1-._52mr._1fz8._1nqp,
+    ._nd_ ._2n8i,
+    ._3zvs {
+        float: left !important;
+    }
 
-    ._hh7>span>a:hover {
+    ._hh7 > span > a:hover {
         background: #6bc8c2;
     }
 
-    ._1t_q ._1t_r, ._1t_q ._4ldz, ._1t_q ._4ld-, ._1t_q ._4ld- img, ._1t_q {
+    ._1t_q ._1t_r,
+    ._1t_q ._4ldz,
+    ._1t_q ._4ld-,
+    ._1t_q ._4ld- img,
+    ._1t_q {
         display: none;
         visibility: hidden;
     }
@@ -218,12 +324,14 @@ body.flatUI {
         @include generic-transition(all);
     }
 
-    ._55lu, ._55lu._57pm {
+    ._55lu,
+    ._55lu._57pm {
         width: 18px !important;
         @include generic-transition(all);
     }
 
-    ._55lu._57xo, ._55lu._57pl {
+    ._55lu._57xo,
+    ._55lu._57pl {
         width: 15px !important;
         @include generic-transition(all);
     }
@@ -255,15 +363,16 @@ body.flatUI {
         margin-bottom: 6px;
     }
 
-	._1mj0._2e-4._3oh- {
-		color: $default_colour !important;
+    ._1mj0._2e-4._3oh- {
+        color: $default_colour !important;
 
-		&::before {
-			content: "";
-		}
-	}
+        &::before {
+            content: "";
+        }
+    }
 
-    ._4a0v._4a0x, ._hh7._aol ._aok {
+    ._4a0v._4a0x,
+    ._hh7._aol ._aok {
         float: right;
         padding: 0;
     }
@@ -288,17 +397,68 @@ body.flatUI {
         display: none !important;
     }
 
-    @media screen and (max-width: 700px) {
+    ._3mts .uiScrollableArea.contentAfter:after,
+    ._5r8l .uiScrollableArea.contentAfter:after {
+        background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(49, 49, 49, 0.7) 100%) !important;
+    }
+
+    ._kmc._7kpg ._1p1t,
+    ._87b_,
+    ._7ht_ {
+        color: rgba(255, 255, 255, 0.4);
+        -webkit-text-fill-color: rgba(255, 255, 255, 0.4);
+    }
+
+    ._4k7a,
+    ._4ik5._4ik4,
+    ._pre._pyf {
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    ._6-xp {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    ._1z_2._2u_d._7i2j {
+        svg {
+            path {
+                fill: white;
+            }
+        }
+    }
+
+    path {
+        &#Fill-1,
+        &#Fill-2,
+        &#Fill-24,
+        &#Fill-23,
+        &#Fill-19 {
+            fill: white;
+        }
+    }
+
+    ._87u_ {
+        display: flex;
+    }
+
+    @media screen and (max-width: 900px) {
         ._6zkb {
             justify-content: center;
         }
 
         ._2il3 {
             padding-left: 0px;
+            padding-right: 0px;
         }
 
         ._1ht1 ._1qt3 {
             margin-right: 0px;
+        }
+        
+        ._87u_ {
+            &._7sta._7stb {
+                display: none;
+            }
         }
     }
 }
