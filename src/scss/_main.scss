@@ -169,7 +169,13 @@ body.flatUI {
     ._5qsj,
     ._7s4e,
     ._6zkf,
-    ._6zkh {
+    ._6zkh,
+    ._4k7a,
+    ._4ik5._4ik4,
+    ._pre._pyf,
+    ._87b_,
+    ._7ht_,
+    ._4g0h {
         @include white-text(0.7, !important);
         @include generic-transition(color);
     }
@@ -179,9 +185,9 @@ body.flatUI {
         font-weight: bold;
     }
 
-    ._4g0h {
-        @include white-text(0.4, !important);
-        @include generic-transition(color);
+    ._kmc._7kpg ._1p1t {
+        color: rgba(255, 255, 255, 0.4);
+        -webkit-text-fill-color: rgba(255, 255, 255, 0.4);
     }
 
     ._4gd0 {
@@ -406,19 +412,6 @@ body.flatUI {
     ._3mts .uiScrollableArea.contentAfter:after,
     ._5r8l .uiScrollableArea.contentAfter:after {
         background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(49, 49, 49, 0.7) 100%) !important;
-    }
-
-    ._kmc._7kpg ._1p1t,
-    ._87b_,
-    ._7ht_ {
-        color: rgba(255, 255, 255, 0.4);
-        -webkit-text-fill-color: rgba(255, 255, 255, 0.4);
-    }
-
-    ._4k7a,
-    ._4ik5._4ik4,
-    ._pre._pyf {
-        color: rgba(255, 255, 255, 0.7);
     }
 
     ._6-xp {
