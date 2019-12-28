@@ -71,7 +71,8 @@ body.flatUI {
     ._nd_._-5k ._hh7,
     ._nd_ ._3058,
     ._1ht1._1ht2 ._6zkc,
-    ._3egs {
+    ._3egs,
+    ._3mtr ._4qcs {
         @include generic-transition(background);
         background-color: $transparent !important;
         border-color: $transparent !important;
@@ -143,9 +144,9 @@ body.flatUI {
     ._2620,
     ._4u4_ > h3,
     ._3oh- a,
-    ._5qsj,
     ._6-xo,
-    ._8slc {
+    ._8slc,
+    ._3jv8 {
         @include white-text(1, !important);
         @include generic-transition(color);
     }
@@ -163,12 +164,21 @@ body.flatUI {
     ._1ht3 ._1ht6,
     ._1ht3 ._1ht7,
     ._5rp8 ._45m_,
-    .__6m {
+    .__6m,
+    ._3q35,
+    ._5qsj,
+    ._7s4e,
+    ._6zkf,
+    ._6zkh {
         @include white-text(0.7, !important);
         @include generic-transition(color);
     }
 
-    ._3q35,
+    ._7u0a {
+        @include white-text(1, !important);
+        font-weight: bold;
+    }
+
     ._4g0h {
         @include white-text(0.4, !important);
         @include generic-transition(color);
@@ -452,6 +462,10 @@ body.flatUI {
     ._3zvs {
         max-width: 100%;
         width: 100%;
+    }
+
+    rect._8rsr {
+        fill: $chat_background !important;
     }
 
     @media screen and (max-width: 900px) {
