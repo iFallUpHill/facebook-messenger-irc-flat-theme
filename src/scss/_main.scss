@@ -69,7 +69,9 @@ body.flatUI {
     ._nd_ ._hh7:active,
     ._hh7:active,
     ._nd_._-5k ._hh7,
-    ._nd_ ._3058 {
+    ._nd_ ._3058,
+    ._1ht1._1ht2 ._6zkc,
+    ._3egs {
         @include generic-transition(background);
         background-color: $transparent !important;
         border-color: $transparent !important;
@@ -142,7 +144,8 @@ body.flatUI {
     ._4u4_ > h3,
     ._3oh- a,
     ._5qsj,
-    ._6-xo {
+    ._6-xo,
+    ._8slc {
         @include white-text(1, !important);
         @include generic-transition(color);
     }
@@ -273,9 +276,11 @@ body.flatUI {
         display: inline-block;
     }
 
+    // images and preview cards
     ._3058 ._mxz,
-    ._3058 ._52mr {
-        border-radius: 0 !important;
+    ._3058 ._52mr,
+    ._29_7 ._5i_d ._3xn1 {
+        border-radius: 8px !important;
     }
 
     ._4sp8._li {
@@ -338,15 +343,6 @@ body.flatUI {
 
     ._1ht6 {
         max-width: 220px;
-    }
-
-    ._1ht1 {
-        height: 56px;
-    }
-
-    ._2j6 {
-        bottom: 6px;
-        right: 13px;
     }
 
     .uiScrollableAreaTrack {
@@ -439,6 +435,23 @@ body.flatUI {
 
     ._87u_ {
         display: flex;
+    }
+
+    // reactions
+    ._8rnv {
+        right: -30px;
+        bottom: -18px;
+    }
+
+    // replies
+    ._hh7 ._pye ._pyf {
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+
+    // image container
+    ._3zvs {
+        max-width: 100%;
+        width: 100%;
     }
 
     @media screen and (max-width: 900px) {

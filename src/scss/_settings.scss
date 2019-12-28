@@ -31,6 +31,20 @@ body.flatUI {
 
     ._2c9i ._4ebz {
     	border-bottom: none;
-    }
+	}
+	
+	// setting options
+	._6ct9,
+	._6cs6,
+	._4ng2,
+	._4ng2,
+	._6ct8._6y58 {
+		@include white-text(1, !important);
+	}
+
+	// more settings options
+	._6cs7 {
+		@include white-text(0.7, !important);
+	}
 
 }
